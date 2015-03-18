@@ -1,0 +1,2 @@
+seq 10 | xargs -i seq -s" " {} | awk "{for(i=2;i<NF;i++)if(!($NF%$i))next; print $NF}"
+# term	ORSによる速度向上
